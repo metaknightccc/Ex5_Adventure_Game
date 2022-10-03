@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float _speed = 5;
     [SerializeField] private float _turnSpeed = 360;
+    [SerializeField] private int deadHeight = -10;
     private Vector3 _input;
 
     void Update()
@@ -20,6 +21,10 @@ public class PlayerMove : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        if (transform.position.y<deadHeight)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     void GatherInput()
