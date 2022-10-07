@@ -13,7 +13,6 @@ public class EnemyMove : MonoBehaviour
         player=GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(LookForPlayer());
     }
-
     IEnumerator LookForPlayer()
     {
         while (true)
