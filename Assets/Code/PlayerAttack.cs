@@ -24,7 +24,7 @@ public class PlayerAttack : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(mainCam.ScreenPointToRay(Input.mousePosition), out hit, 200)) {
                 transform.LookAt(hit.point);
-                GameObject newBullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+                GameObject newBullet = Instantiate(bulletPrefab, transform.position+(transform.forward*2), transform.rotation);
                 newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletForce);
             }
         }
