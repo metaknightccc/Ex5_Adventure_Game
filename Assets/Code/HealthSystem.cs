@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] hearts;
+    [SerializeField] private GameObject[] hearts;
     private int life;
     private bool isDead;
 
@@ -31,12 +30,26 @@ public class HealthSystem : MonoBehaviour
         if (life >= 1)
         {
             life -= damage;
-            Destroy(hearts[life].gameObject);
+            hearts[life].gameObject.SetActive(false);
             if (life < 1)
             {
                 isDead = true;
             }
             
+        }
+    }
+    
+    public bool Health(int healthValue)
+    {
+        if (life + healthValue <= hearts.Length)
+        {
+            hearts[life].gameObject.SetActive(true);
+            life += healthValue;
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
