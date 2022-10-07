@@ -781,6 +781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 34501285238852824, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 88b7b2d21690425b9ed4ca5f4388cf09, type: 2}
     - target: {fileID: 2767790541937029482, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
       propertyPath: m_LocalPosition.z
       value: -87.6
@@ -809,6 +813,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 192
       objectReference: {fileID: 0}
+    - target: {fileID: 6369280690447860043, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01fa885d265f42108489fbccce2f8ba5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
 --- !u!1 &434938655
@@ -2751,6 +2759,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7599646167442686280, guid: d7b9d37e7c1afbd428a5d7b6482f2c23, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 7599646167442686281, guid: d7b9d37e7c1afbd428a5d7b6482f2c23, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -2849,25 +2861,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1005386721759923584, guid: 35f34635aae3f3b4e8d1d631838ccd9b, type: 3}
---- !u!195 &7599646168563538022
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7599646168563538019}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.50000006
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
