@@ -781,6 +781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forest
       objectReference: {fileID: 0}
+    - target: {fileID: 34501285238852824, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 88b7b2d21690425b9ed4ca5f4388cf09, type: 2}
     - target: {fileID: 2767790541937029482, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
       propertyPath: m_LocalPosition.z
       value: -87.6
@@ -809,6 +813,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 192
       objectReference: {fileID: 0}
+    - target: {fileID: 6369280690447860043, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01fa885d265f42108489fbccce2f8ba5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b285931dd9e2466499f3c18e817cfad8, type: 3}
 --- !u!1 &434938655
