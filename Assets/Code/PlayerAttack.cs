@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
                 _agent.SetDestination(hit.point);
             }
         }*/
-        else if (Input.GetMouseButtonDown(1)) {
+        if (Input.GetMouseButtonDown(1)) {
             RaycastHit hit;
             if (Physics.Raycast(mainCam.ScreenPointToRay(Input.mousePosition), out hit, 200)) {
                 transform.LookAt(hit.point);
