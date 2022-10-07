@@ -6966,7 +6966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackType: 1
-  speed: 23
+  speed: 23.5
   movingTrack: {fileID: 1071486735}
   health: {fileID: 7599646168563538020}
 --- !u!114 &1071486735
@@ -13245,7 +13245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7599646167442686282, guid: d7b9d37e7c1afbd428a5d7b6482f2c23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.85998535
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7599646167442686282, guid: d7b9d37e7c1afbd428a5d7b6482f2c23, type: 3}
       propertyPath: m_LocalPosition.z
