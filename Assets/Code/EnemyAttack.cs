@@ -22,7 +22,7 @@ public class EnemyAttack : MonoBehaviour
             Debug.Log("Damaged");
             //damage player
         }
-        if (other.CompareTag("Bullet")) {
+        else if (other.CompareTag("Bullet")) {
             Vector3 direction = (transform.position - other.transform.position).normalized;
             gameObject.GetComponent<Rigidbody>().AddForce (direction * speed);
             Destroy(other.gameObject);
