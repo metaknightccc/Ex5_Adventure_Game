@@ -11,11 +11,11 @@ public class PlayerAttack : MonoBehaviour
     public GameObject bulletPrefab;
     int bulletForce = 900;
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         mainCam = Camera.main;
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
