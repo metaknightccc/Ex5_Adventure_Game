@@ -13160,7 +13160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2892577064013081971, guid: bc91ae488b9938849a36962f6d00cc30, type: 3}
       propertyPath: keyMax
-      value: 4
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892577064013081971, guid: bc91ae488b9938849a36962f6d00cc30, type: 3}
+      propertyPath: levelName
+      value: WinPage
       objectReference: {fileID: 0}
     - target: {fileID: 4562827752587954230, guid: bc91ae488b9938849a36962f6d00cc30, type: 3}
       propertyPath: m_RootOrder
