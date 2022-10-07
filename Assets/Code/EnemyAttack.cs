@@ -7,7 +7,7 @@ public class EnemyAttack : MonoBehaviour
     public float AttackType = 1;
     private GameObject player;
     private UnityEngine.AI.NavMeshAgent _agent;
-    public float speed 20;
+    public float speed = 20.0f;
 
     public HealthSystem health;
 
