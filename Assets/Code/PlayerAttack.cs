@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class PlayerAttack : MonoBehaviour
 {
-    NavMeshAgent _agent;
+    //NavMeshAgent _agent;
     Camera mainCam;
     public GameObject bulletPrefab;
     int bulletForce = 900;
@@ -21,12 +21,12 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetMouseButtonDown(0)) {
+        /*if (Input.GetMouseButtonDown(0)) {
             RaycastHit hit;
             if (Physics.Raycast(mainCam.ScreenPointToRay(Input.mousePosition), out hit, 200)) {
                 _agent.SetDestination(hit.point);
             }
-        }
+        }*/
         else if (Input.GetMouseButtonDown(1)) {
             RaycastHit hit;
             if (Physics.Raycast(mainCam.ScreenPointToRay(Input.mousePosition), out hit, 200)) {
