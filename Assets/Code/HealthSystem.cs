@@ -21,7 +21,7 @@ public class HealthSystem : MonoBehaviour
         if (isDead == true)
         {
             Debug.Log("Dead");
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("DeadPage");
         }
     }
 
