@@ -8,6 +8,9 @@ public class Diamond : MonoBehaviour
 
         if (playerInventory != null)
         {
+            Debug.Log("Got Item");
+            Globals.pickups++;
+            Globals.bulletCount++;
             playerInventory.DiamondCollected();
             gameObject.SetActive(false);
         }
