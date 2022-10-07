@@ -2,15 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class HealthSystem : MonoBehaviour
 {
-    public int life;
+    [SerializeField]
+    private GameObject[] hearts;
+    private int life;
     private bool isDead;
 
     private void Start()
     {
-        life = 100;
+        life = hearts.Length;
     }
 
     void Update()
@@ -18,6 +22,7 @@ public class HealthSystem : MonoBehaviour
         if (isDead == true)
         {
             Debug.Log("Dead");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
@@ -26,6 +31,7 @@ public class HealthSystem : MonoBehaviour
         if (life >= 1)
         {
             life -= damage;
+            Destroy(hearts[life].gameObject);
             if (life < 1)
             {
                 isDead = true;
