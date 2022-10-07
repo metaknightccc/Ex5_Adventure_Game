@@ -2836,3 +2836,16 @@ MonoBehaviour:
   - {fileID: 1911042662}
   - {fileID: 1198093118}
   - {fileID: 1740850857}
+--- !u!114 &7599646168563538021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7599646168563538019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6f54af9f4b7e548bd148ba7e866958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1005386721759923584, guid: 35f34635aae3f3b4e8d1d631838ccd9b, type: 3}
